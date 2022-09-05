@@ -22,11 +22,6 @@ jobs:
       with:
         use-public-rspm: true
 
-    - uses: r-lib/actions/setup-r-dependencies@v2
-      with:
-        extra-packages: any::rcmdcheck
-        needs: check
-
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
